@@ -20,7 +20,7 @@ export default function AboutPage() {
       <Header />
       <PageLayout
         title="About British Best Betting Sites"
-        subtitle="britishbestbettingsites.com — Independent bookmaker comparison since 2022"
+        subtitle="britishbestbettingsites.com"
       >
 
         <ContentBlock title="Who We Are" accent="sky">
