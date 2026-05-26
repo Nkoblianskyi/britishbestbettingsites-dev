@@ -141,7 +141,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 aria-label={alt}
                 className="transition-opacity hover:opacity-80 rounded-lg overflow-hidden"
-                style={{ background: "#ffffff", padding: "7px 12px" }}
+                
               >
                 <img
                   src={src}
