@@ -22,15 +22,15 @@ const dmMono = DM_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "British Best Betting Sites — Top UK Bookmakers 2025",
+  title: "British Best Betting Sites Top UK Bookmakers 2026",
   description:
     "Find the UK's best betting sites ranked by independent experts. UKGC-licensed bookmakers reviewed for odds, bonuses, safety, and payouts. britishbestbettingsites.com — unbiased, transparent, updated monthly.",
-  keywords: "best betting sites UK, UK bookmakers, UKGC licensed, sports betting, free bets, betting offers 2025",
+  keywords: "best betting sites UK, UK bookmakers, UKGC licensed, sports betting, free bets, betting offers 2026",
   robots: "index, follow",
   referrer: "strict-origin-when-cross-origin",
   authors: [{ name: "British Best Betting Sites Editorial Team" }],
   openGraph: {
-    title: "British Best Betting Sites — Top UK Bookmakers 2025",
+    title: "British Best Betting Sites Top UK Bookmakers 2026",
     description:
       "Independent expert rankings of the best UK betting sites. UKGC-licensed only. Updated monthly.",
     url: "https://britishbestbettingsites.com",

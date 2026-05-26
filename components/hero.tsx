@@ -77,7 +77,7 @@ export function Hero() {
                 backgroundClip: "text",
               }}
             >
-              Betting Sites 2025
+              Betting Sites 2026
             </span>
           </h1>
 
