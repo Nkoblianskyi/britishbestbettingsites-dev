@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* British Best Betting Sites — Light Pastel Sport Theme */
+    --background: 210 30% 97%;
+    --foreground: 215 35% 14%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 35% 14%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 35% 14%;
+    --primary: 207 85% 40%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 25% 92%;
+    --secondary-foreground: 215 35% 22%;
+    --muted: 210 20% 93%;
+    --muted-foreground: 215 20% 48%;
+    --accent: 151 60% 38%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 4 80% 52%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 210 20% 86%;
+    --input: 210 20% 86%;
+    --ring: 207 85% 40%;
+    --radius: 0.75rem;
+
+    /* Custom sport tokens */
+    --sky: 207 85% 40%;
+    --sky-light: 207 80% 93%;
+    --sky-pale: 207 60% 96%;
+    --grass: 151 60% 38%;
+    --grass-light: 151 55% 92%;
+    --coral: 4 80% 58%;
+    --coral-light: 4 70% 94%;
+    --slate: 215 35% 14%;
+    --slate-mid: 215 20% 38%;
+    --slate-light: 215 15% 60%;
+    --white: 0 0% 100%;
+    --surface: 210 30% 97%;
+    --surface-raised: 210 25% 94%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Divider utilities */
+.sky-rule {
+  border-top: 2px solid hsl(var(--sky));
+}
+
+.sky-rule-thin {
+  border-top: 1px solid hsl(var(--sky) / 0.25);
+}
+
+/* Sport pitch line pattern — light version */
+.sport-pattern {
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 48px,
+      hsl(var(--sky) / 0.05) 48px,
+      hsl(var(--sky) / 0.05) 49px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 48px,
+      hsl(var(--sky) / 0.04) 48px,
+      hsl(var(--sky) / 0.04) 49px
+    );
+}
+
+/* Card hover lift */
+.card-lift {
+  transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+}
+
+.card-lift:hover {
+  box-shadow: 0 8px 28px hsl(var(--sky) / 0.14), 0 2px 6px hsl(215 35% 14% / 0.06);
+  transform: translateY(-2px);
+  border-color: hsl(var(--sky) / 0.4);
+}
+
+/* Glass panel — light */
+.glass-light {
+  background: hsl(0 0% 100% / 0.88);
+  backdrop-filter: blur(16px);
+  border: 1px solid hsl(var(--sky) / 0.18);
+}
+
+/* Score bar animation */
+@keyframes fill-bar {
+  from { width: 0; }
+  to { width: var(--bar-width); }
+}
+
+.score-bar-fill {
+  animation: fill-bar 1s ease-out forwards;
+}
+
+/* Sky shimmer text */
+@keyframes shimmer-sky {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.sky-shimmer {
+  background: linear-gradient(
+    90deg,
+    hsl(var(--sky)) 0%,
+    hsl(207 90% 56%) 40%,
+    hsl(var(--sky)) 60%,
+    hsl(207 70% 32%) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer-sky 4s linear infinite;
+}
